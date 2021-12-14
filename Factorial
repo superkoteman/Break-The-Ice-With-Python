@@ -1,0 +1,10 @@
+def fact(number):
+    if number == 0:
+        return 1
+    elif number < 0:
+        return "Please, enter a positive number"
+    else:
+        return number * fact(number - 1)
+
+task = fact(int(input()))
+print(task)
