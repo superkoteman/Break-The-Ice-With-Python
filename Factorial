@@ -9,6 +9,6 @@ def fact(number):
             return number * fact(number - 1)
     except:
         return fact(input("Please, enter a number: "))
-
+        
 
 print(fact(input("Please, enter a positive number to calculate its factorial: ")))
