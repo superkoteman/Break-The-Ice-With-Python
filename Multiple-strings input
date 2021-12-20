@@ -1,0 +1,8 @@
+li = []
+while True:
+    string = input()
+    if len(string) == 0:
+        break
+    else:
+        li.append(string.upper())
+print("\n".join(li))
