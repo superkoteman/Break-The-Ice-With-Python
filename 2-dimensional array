@@ -1,0 +1,8 @@
+rows, columns = input().split(",")
+increment = 1
+array = [[0 for i in range(int(columns))] for i in range(int(rows))]
+for i in range(1, int(rows)):
+    for j in range(0, int(columns)):
+        array[i][j] = j*increment
+    increment += 1
+print(array)
