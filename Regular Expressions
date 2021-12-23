@@ -1,0 +1,10 @@
+import re
+
+pattern = re.compile(r"[a-zA-Z]")
+pattern2 = re.compile(r"\d")
+string = input()
+result1 = re.findall(pattern, string)
+result2 = re.findall(pattern2,string)
+
+print("LETTERS", len(result1))
+print("DIGITS", len(result2))
