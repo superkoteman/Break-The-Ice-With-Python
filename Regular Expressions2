@@ -1,0 +1,10 @@
+import re
+
+pattern = re.compile(r"[A-Z]")
+pattern2 = re.compile(r"[a-z]")
+string = input()
+result1 = re.findall(pattern, string)
+result2 = re.findall(pattern2,string)
+
+print("UPPER CASE", len(result1))
+print("LOWER CASE", len(result2))
