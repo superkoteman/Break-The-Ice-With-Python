@@ -1,0 +1,4 @@
+li = [int(i)**2 for i in input().split(",")]
+for i in range(0, len(li), 2):
+    print(li[i], end=",")
+print('\b')
