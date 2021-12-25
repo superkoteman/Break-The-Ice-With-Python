@@ -1,0 +1,10 @@
+status = 0
+while True:
+    li = [i for i in input().split()]
+    if len(li) == 0:
+        print(status)
+        break
+    elif li[0] == "D":
+        status += int(li[1])
+    elif li[0] == "W":
+        status -= int(li[1])
