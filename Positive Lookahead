@@ -1,0 +1,8 @@
+import re
+
+pattern = re.compile(r"^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[$#@])[A-Za-z0-9$#@]{6,12}$")
+string = [i for i in input().split(",")]
+for i in string:
+    if re.findall(pattern, i):
+        print(i, end=",")
+print("\b")
