@@ -1,0 +1,10 @@
+from operator import itemgetter
+
+string = input().split(",")
+li = []
+while string != [""]:
+    tup = tuple(string)
+    li.append(tup)
+    string = input().split(",")
+
+print(sorted(li, key=itemgetter(0, 1, 2)))
