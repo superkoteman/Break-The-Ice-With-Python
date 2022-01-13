@@ -1,0 +1,22 @@
+from math import sqrt
+
+n = [i for i in input().split()]
+summary = [0,0]
+
+while n:
+    n[1] = int(n[1])
+    if n[0] == 'UP':
+        summary[0] += n[1]
+    elif n[0] == 'DOWN':
+        summary[0] -= n[1]
+    elif n[0] == 'LEFT':
+        summary[1] += n[1]
+    elif n[0] == 'RIGHT':
+        summary[1] -= n[1]
+    else:
+        print("Incorrect command. Try again")
+        n = [i for i in input().split()]
+        continue
+    n = [i for i in input().split()]
+
+print(round(sqrt(summary[0]**2 + (summary[1]**2))))
