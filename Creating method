@@ -1,0 +1,8 @@
+class BigNumber():
+    def square_value(self, number, power):
+        self.number = number
+        self.power = power
+        return print(number**power)
+
+n = BigNumber()
+n.square_value(int(input()), int(input()))
