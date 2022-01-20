@@ -1,0 +1,10 @@
+class Test():
+    '''This is only for testing purpose
+    '''
+    def my_function(self):
+        '''Nothing to say'''
+        pass
+obj = Test()
+print(obj.__doc__)
+print(obj.my_function.__doc__)
+print(input().__doc__)
