@@ -1,0 +1,10 @@
+class Animal():
+    is_alive = True
+
+    def __init__(self, size, type):
+        self.size = size
+        self.type = type
+
+dog = Animal('big', 'fluffy')
+print(Animal.is_alive)
+print(dog.size)
