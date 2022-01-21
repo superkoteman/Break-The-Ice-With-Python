@@ -1,0 +1,4 @@
+def integer_to_string(number):
+    return print(str(number))
+
+integer_to_string(int(input()))
