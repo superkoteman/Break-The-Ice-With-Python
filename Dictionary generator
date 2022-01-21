@@ -1,0 +1,4 @@
+def dictionary(number1, number2):
+    return print({i:i**2 for i in range(number1, number2 + 1)})
+
+dictionary(1, 20)
