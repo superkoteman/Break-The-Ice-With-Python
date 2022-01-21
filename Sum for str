@@ -1,0 +1,4 @@
+def str_summary(number1, number2):
+    return print(int(number1)+int(number2))
+
+str_summary(input(), input())
