@@ -1,0 +1,5 @@
+def list(number1, number2):
+    li = [i**2 for i in range(number1, number2 + 1)]
+    print(li[:5])
+
+list(1, 20)
