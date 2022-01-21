@@ -1,0 +1,4 @@
+def concatenation(element1, element2):
+    return print(element1+element2)
+
+concatenation(input(),input())
