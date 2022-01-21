@@ -1,0 +1,7 @@
+def dictionary(number1, number2):
+    dict = {i:i**2 for i in range(number1, number2 + 1)}
+    for k, v in dict.items():
+        print(k)
+
+
+dictionary(1, 20)
