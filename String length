@@ -1,0 +1,9 @@
+def maximum_length(element1, element2):
+    if len(element1) > len(element2):
+        return print(element1)
+    elif len(element2) > len(element1):
+        return print(element2)
+    else:
+        return print(element1, element2, sep='\n')
+
+maximum_length(input(),input())
