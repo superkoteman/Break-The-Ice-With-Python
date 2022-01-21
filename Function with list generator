@@ -1,0 +1,4 @@
+def list(number1, number2):
+    return print([i**2 for i in range(number1, number2 + 1)])
+
+list(1, 20)
