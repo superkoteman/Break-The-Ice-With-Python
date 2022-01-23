@@ -1,0 +1,14 @@
+class American():
+    def height(self):
+        self.height = 6
+        print(self.height)
+    def __init__(self):
+        print("I love spaghetti westerns!")
+
+class NewYorker(American):
+    def __init__(self):
+        super().__init__()
+        print("I love Statue of Liberty!")
+
+Bill = NewYorker()
+Bill.height()
