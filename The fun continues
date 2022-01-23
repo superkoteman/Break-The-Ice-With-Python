@@ -1,0 +1,1 @@
+print(list(filter(lambda x: True if x % 2 == 0 else False, [i**2 for i in range(1, 21)])))
