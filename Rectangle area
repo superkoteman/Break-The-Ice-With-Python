@@ -1,0 +1,9 @@
+class Rectangle():
+    def __init__(self, length, width):
+        self.length = int(length)
+        self.width = int(width)
+    def area_of_rectangle(self):
+        return print(self.length * self.width)
+
+object1 = Rectangle(1, 2)
+object1.area_of_rectangle()
