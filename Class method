@@ -1,0 +1,9 @@
+from math import pi
+
+class Circle():
+    def area_of_circle(self, radius):
+        self.radius = int(radius)
+        return print(pi * radius**2)
+
+object1 = Circle()
+object1.area_of_circle(12)
