@@ -1,0 +1,15 @@
+class Shape():
+    def area(self, length = 0, width = 0):
+        self.length = int(length)
+        self.width = int(width)
+        return self.length * self.width
+
+class Square(Shape):
+    def __init__(self, length):
+        self.length = int(length)
+
+    def area(self):
+        return super().area(self.length, self.length)
+
+object1 = Square(5)
+print(object1.area())
