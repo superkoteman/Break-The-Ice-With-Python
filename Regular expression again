@@ -1,0 +1,8 @@
+import re
+
+pattern = re.compile(r'[a-zA-Z]+(?=@)')
+string = input('Please, enter the e-mail: ')
+
+name = pattern.search(string)
+
+print(name.group())
