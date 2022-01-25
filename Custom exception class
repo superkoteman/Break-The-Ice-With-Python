@@ -1,0 +1,7 @@
+class CustomError(Exception):
+    def __init__(self, message = "You are doing it wrong"):
+        self.message = message
+        super().__init__(self.message)
+
+if 1 != 0:
+    raise CustomError
