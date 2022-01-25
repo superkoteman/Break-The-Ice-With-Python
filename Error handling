@@ -1,0 +1,7 @@
+def divide_by_zero():
+    try:
+        return print(5/0)
+    except ZeroDivisionError:
+        return print("Sorry, you can't divide by zero.")
+
+divide_by_zero()
