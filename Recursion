@@ -1,0 +1,7 @@
+def some_function(number):
+    if number == 0:
+        return 0
+    else:
+        return some_function(number-1) + 100
+
+print(some_function(int(input())))
