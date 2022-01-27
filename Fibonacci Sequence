@@ -1,0 +1,9 @@
+def some_function(number):
+    if number == 0:
+        return 0
+    elif number == 1:
+        return 1
+    else:
+        return some_function(number-1)+some_function(number-2)
+
+print(some_function(int(input())))
