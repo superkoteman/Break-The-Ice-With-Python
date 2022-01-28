@@ -1,0 +1,18 @@
+def binary_search(list, element):
+    low = 0
+    high = len(list) - 1
+
+    while low <= high:
+        middle = low+ (high-low) // 2
+
+        if list[middle] == element:
+            return print(f'{element} has the index {middle}')
+        elif list[middle] < element:
+            low = middle + 1
+        elif list[middle] > element:
+            high = middle - 1
+        else:
+            return print('There is no such element here')
+
+li = sorted([i for i in input().split()])
+binary_search(li, input())
