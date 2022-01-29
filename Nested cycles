@@ -1,0 +1,4 @@
+for i in ["I", "You"]:
+    for j in ["Play", "Love"]:
+        for y in ["Hockey","Football"]:
+            print (i,j,y)
