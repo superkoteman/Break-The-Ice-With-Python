@@ -1,0 +1,8 @@
+import zlib
+
+string = "hello world!hello world!hello world!hello world!"
+string_in_bytes = str.encode(string)
+compressed_data = zlib.compress(string_in_bytes, 2)
+decompressed_data = zlib.decompress(compressed_data)
+new_old_string = decompressed_data.decode()
+print(new_old_string)
