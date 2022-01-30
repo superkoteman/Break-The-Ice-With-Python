@@ -1,0 +1,6 @@
+heads = 35
+legs = 94
+rabbits = int((legs - 2*heads) / 2)
+chickens = int(heads - rabbits)
+print(rabbits)
+print(chickens)
