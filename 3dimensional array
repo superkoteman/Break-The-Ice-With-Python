@@ -1,0 +1,4 @@
+import pprint
+
+li = [[[0 for i in range(3)] for i in range(5)] for i in range(8)]
+pprint.pprint(li)
