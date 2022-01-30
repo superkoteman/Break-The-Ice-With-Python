@@ -1,0 +1,3 @@
+s = {int(i) for i in input().split()}
+li = sorted(list(s))
+print(li[-2])
