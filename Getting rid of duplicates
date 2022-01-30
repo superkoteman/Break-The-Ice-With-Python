@@ -1,0 +1,6 @@
+li = [12, 24, 35, 24, 88, 120, 155, 88, 120, 155]
+li2 = []
+for i in li:
+    if i not in li2:
+        li2.append(i)
+print(li2)
