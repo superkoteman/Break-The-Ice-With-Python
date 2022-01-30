@@ -1,0 +1,5 @@
+li = [12, 24, 35, 70, 88, 120, 155]
+
+li2 = [i for (j,i) in enumerate(li) if 0 < j < 4 or j > 5]
+
+print(li2)
