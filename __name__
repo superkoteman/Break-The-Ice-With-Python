@@ -1,0 +1,29 @@
+class Person():
+
+    def __init__(self):
+        pass
+
+    def getGender(self):
+        print(type(self).__name__)
+
+class Male(Person):
+
+    def __init__(self):
+        pass
+
+    def getGender(self):
+        super().getGender()
+
+class Female(Person):
+
+    def __init__(self):
+        pass
+    def getGender(self):
+        super().getGender()
+
+human = Person()
+man = Male()
+woman = Female()
+
+man.getGender()
+woman.getGender()
