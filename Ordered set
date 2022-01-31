@@ -1,0 +1,11 @@
+from ordered_set import OrderedSet
+
+n = int(input())
+li = []
+for i in range(n):
+    li.append(input())
+set_to_check = OrderedSet(li)
+print(len(set_to_check))
+for i in set_to_check:
+    print(li.count(i), end=' ')
+print('\b')
