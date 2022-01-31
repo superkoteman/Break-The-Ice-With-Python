@@ -1,17 +1,19 @@
-n = int(input())
-height = n*2-1
-width = 2*height-1
-middle_of_rows = height // 2
-middle_of_cols = width // 2
-li = [['-' for row in range(width)] for col in range(height)]
-letters = [chr(97+i) for i in range(n)]
-letters = list(reversed(letters))
+def rangoli(n):
+    height = n * 2 - 1
+    width = 2 * height - 1
+    middle_of_rows = height // 2
+    middle_of_cols = width // 2
+    li = [['-' for row in range(width)] for col in range(height)]
+    letters = [chr(97 + i) for i in range(n)]
+    letters = list(reversed(letters))
+    for i in range(len(letters)):
+        for index, j in enumerate(range(i, middle_of_rows + 1)):
+            li[j][middle_of_cols - (index * 2)] = letters[i]
+            li[j][middle_of_cols + (index * 2)] = letters[i]
+    for j, i in enumerate(range(height - 1, middle_of_rows, -1)):
+        li[i] = li[j]
+    for i in li:
+        print(*i)
 
-for i in range(len(letters)):
-    for index, j in enumerate(range(i, middle_of_rows+1)):
-        li[j][middle_of_cols - (index * 2)] = letters[i]
-        li[j][middle_of_cols + (index * 2)] = letters[i]
-for j, i in enumerate(range(height - 1, middle_of_rows, -1)):
-    li[i] = li[j]
-for i in li:
-    print (*i)
+
+rangoli(int(input()))
