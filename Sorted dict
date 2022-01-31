@@ -1,0 +1,5 @@
+string = input()
+megaset = {i:string.count(i) for i in string}
+sorted_dict = dict(sorted(megaset.items(), key=lambda item: item[1], reverse=True))
+for k,v in sorted_dict.items():
+    print(k, v)
