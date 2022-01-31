@@ -1,0 +1,7 @@
+import re
+
+string = input()
+pattern_words = re.compile('[a-zA-Z]')
+pattern_digits = re.compile('\d')
+print("Digit", "-", len(re.findall(pattern_digits,string)))
+print("Letter", "-", len(re.findall(pattern_words,string)))
